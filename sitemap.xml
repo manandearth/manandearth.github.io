@@ -3,11 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://manandearth.github.io/categories/</loc>
+    <loc>https://manandearth.github.io/posts/2021-05-21/</loc>
+    <lastmod>2021-05-21T23:31:07+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://manandearth.github.io/</loc>
+    <lastmod>2021-05-21T23:31:07+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://manandearth.github.io/posts/</loc>
+    <lastmod>2021-05-21T23:31:07+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://manandearth.github.io/posts/temp/</loc>
+    <lastmod>2018-03-18T12:13:36+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://manandearth.github.io/categories/</loc>
   </url>
   
   <url>
