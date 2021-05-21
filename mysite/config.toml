@@ -1,4 +1,4 @@
-baseURL = "http://manandearth.github.io/"
+baseURL = "https://manandearth.github.io/"
 languageCode = "en-us"
 title = "Man and Earth"
 theme="archie"
