@@ -10,7 +10,7 @@ paginate=3 # articles per page
 [params]
 	mode="auto" # color-mode → light,dark or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
-	subtitle = "Man meddling with the environment [blog](https://github.com/manandearth/manandearth.github.io)"
+	subtitle = "Man meddling with the [environment](https://wikipedia.com/wiki/environment)"
 
 # Social Tags
 
