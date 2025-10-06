@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo Story</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Hugo Story</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>{year}</copyright>
     <lastBuildDate>Mon, 06 Oct 2025 09:50:42 +0200</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simancon</title>
-      <link>/posts/02_gallery/</link>
+      <link>//localhost:1313/posts/02_gallery/</link>
       <pubDate>Mon, 06 Oct 2025 09:50:42 +0200</pubDate>
-      <guid>/posts/02_gallery/</guid>
+      <guid>//localhost:1313/posts/02_gallery/</guid>
       <description>&lt;p&gt;Part of the magic of taking photos in black and white is that the photographer doesn&amp;rsquo;t really know what the result will really look like. Even if one removes all the errors in exposure and the possible chemical issues, which for me are a norm, We humans don&amp;rsquo;t see the world in monochrome and the results are always surprising.&#xA;Another interesting fact, is that photographs, perhaps like music, take a time to create a space in your mind and your heart. what seems terrible at first, might look really great in a short while, and better in longer while. I told this to my dad the other day, on the phone, and he affirmed in an excited voice ( relatively excited.. ) that yeah, he always noticed that with his own portraits, that where he thought he looked not too good, he now looks really cool.&#xA;&lt;figure class=&#34;center-image&#34;&gt;&#xA;  &lt;img src=&#34;./images/02_gallery/color_inner.jpg&#34; alt=&#34;Simancon peak&#34;&gt;&#xA;  &#xA;    &lt;figcaption&gt;Chemical wonder&lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Scratchy cut film</title>
-      <link>/posts/01_gallery/</link>
+      <link>//localhost:1313/posts/01_gallery/</link>
       <pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/01_gallery/</guid>
+      <guid>//localhost:1313/posts/01_gallery/</guid>
       <description>&lt;p&gt;Part of the magic of taking photos in black and white is due to the fact the photographer doesn&amp;rsquo;t see in black and white. Even if one removes all the errors in exposure and the possible chemical issues, which for me are a norm, we humans don&amp;rsquo;t see the world in monochrome and the results are always surprising. This and the fact that what your eyes differentiate so easily due to color separation is just mud for the black and white film makes this medium challenging and strangely rewarding.&#xA;One other interesting fact, is that photographs, perhaps like music, take a time to create a space in your mind and your heart. what seems terrible at first, might look really great in a short while, and better in longer while. I told this to my dad the other day, on the phone, and he affirmed in an excited voice ( relatively excited.. ) that yeah, he always noticed that with his own portraits, that where he thought he looked not too good, he now looks really cool.&#xA;&lt;figure class=&#34;center-image&#34;&gt;&#xA;  &lt;img src=&#34;./images/01_gallery/vejer_from_cross_color.jpg&#34; alt=&#34;Vejer from cross&#34;&gt;&#xA;  &#xA;    &lt;figcaption&gt;Vejer from cross&lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&#xA;My current adventures in film I started with a baby Graflex from the 1930s. I bought it online, and spent some time fixing and cleaning, and trying to figure a way to cut film for the strange 2 1/4&amp;quot; x 3 1/4&amp;quot; format. plus film holder for this unusual format for developing the film in a standard developing tank. I realised quite early that nature and chemistry will shine more than my expertise in this game, I am more of a tinkerer than a real technician, and I enjoy tinkering a lot.&#xA;My best photograph in my eyes by far, so far&amp;hellip; is one I took using a multi film sheet holder, it is the Grafmatic, it is ingenius, and allows firing 6 sheets, but&amp;hellip; being almost a century old, mine does tend to get stuck. In this particular case the subject being a far away windmill at night, the meter demanded 8 seconds exposure, and the graflex capable of 1/10 of a second ( early days, I didn&amp;rsquo;t think of just openning the shutter and use a lens cap to control the time ) meant I had to fire it 80 times, but after about 10 exposures I realise that every time that I wind the shutter between shots, I expose the film again, since I wasn&amp;rsquo;t replacing the film cover..  well at that point I decided to stop, and also at that moment the film holder got stuck. Later at home in a dark bag I managed to rescue that sheet, not without seriously scratching it.&#xA;Art.&#xA;&lt;figure class=&#34;center-image&#34;&gt;&#xA;  &lt;img src=&#34;./images/01_gallery/vejer_night_color.jpg&#34; alt=&#34;Vejer Night&#34;&gt;&#xA;  &#xA;    &lt;figcaption&gt;Scratchy night&lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;</description>
     </item>
   </channel>
