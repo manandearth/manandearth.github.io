@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo Story</title>
-    <link>/</link>
-    <description>Recent content on Hugo Story</description>
+    <title>Posts on Hugo Story</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Hugo Story</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>{year}</copyright>
     <lastBuildDate>Sun, 05 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>01_gallery</title>
       <link>/posts/01_gallery/</link>

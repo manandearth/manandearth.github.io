@@ -1,0 +1,4 @@
+#gallery-post > .gallery.style2 article .image img {
+    height: 15rem;
+    object-fit: cover;
+}
