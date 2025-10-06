@@ -4,7 +4,8 @@
 }
 .gallery-post-content {
     font-size: 20px;
-    margin: 4rem;
+    width: 650px;
+    margin: 0 auto;
 }
 figure {
   margin: 2rem 0;
@@ -22,7 +23,6 @@ figcaption {
 }
 .center-image {
     justify-self: center;
-    width: 50%;
 }
 
 /* === Post list === */
