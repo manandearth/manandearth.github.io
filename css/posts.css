@@ -2,3 +2,42 @@
     height: 15rem;
     object-fit: cover;
 }
+.gallery-post-content {
+    font-size: 20px;
+    margin: 4rem;
+}
+figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+figure img {
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+}
+figcaption {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+.center-image {
+    justify-self: center;
+    width: 50%;
+}
+
+/* === Post list === */
+.posts-list {
+  display: grid;
+  gap: 3rem;
+  margin: 3rem auto;
+  max-width: 900px;
+}
+
+.posts-list article h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.posts-list article p {
+  color: #666;
+  font-size: 1rem;
+}

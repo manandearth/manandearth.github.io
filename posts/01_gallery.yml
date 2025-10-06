@@ -1,0 +1,35 @@
+---
+title: "Scratchy cut film"
+style: "style2 medium lightbox onscroll-fade-in"
+date: 2025-10-05
+draft: false
+layout: "gallery"
+content: |
+ Part of the magic of taking photos in black and white is that the photographer doesn't really know what the result will really look like. Even if one removes all the errors in exposure and the possible chemical issues, which for me are a norm, We humans don't see the world in monochrome and the results are always surprising. 
+ Another interesting fact, is that photographs, perhaps like music, take a time to create a space in your mind and your heart. what seems terrible at first, might look really great in a short while, and better in longer while. I told this to my dad the other day, on the phone, and he affirmed in an excited voice ( relatively excited.. ) that yeah, he always noticed that with his own portraits, that where he thought he looked not too good, he now looks really cool.
+inlineImage: "images/01_gallery/01.jpg"
+images:
+  - image: "images/01_gallery/01.jpg"
+    title: "Title"
+    thumb: "images/01_gallery/01.jpg"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    button: "Details"
+
+  - image: "images/01_gallery/02.jpg"
+    title: "Title"
+    thumb: "images/01_gallery/02.jpg"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    button: "Details"
+    
+  - image: "images/01_gallery/03.jpg"
+    title: "Title"
+    thumb: "images/01_gallery/03.jpg"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    button: "Details"
+
+  - image: "images/01_gallery/04.jpg"
+    title: "Title"
+    thumb: "images/01_gallery/04.jpg"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    button: "Details"
+---

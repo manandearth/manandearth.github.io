@@ -1,0 +1,53 @@
+---
+title: "Simancon"
+style: "style2 medium lightbox onscroll-fade-in"
+date: 2025-10-06T09:50:42+02:00
+draft: false
+layout: "gallery"
+content: |
+  This is a <strong>Gallery</strong> element. It can behave as a lightbox (when given the <code>lightbox</code> class), and you can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-gallery">details</a>).
+inlineImage: "images/02_gallery/color_inner.jpg"
+images:
+  - image: "images/02_gallery/simancon_01.jpg"
+    title: "Title"
+    thumb: "images/02gallery/simancon_01.jpg"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    button: "Details"
+
+  - image: "images/02_gallery/simancon_02.jpg"
+    title: "Title"
+    thumb: "images/02_gallery/simancon_02.jpg"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    button: "Details"
+    
+  - image: "images/02_gallery/simancon_03.jpg"
+    title: "Title"
+    thumb: "images/02_gallery/simancon_03.jpg"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    button: "Details"
+
+  - image: "images/02_gallery/simancon_04.jpg"
+    title: "Title"
+    thumb: "images/02_gallery/simancon_04.jpg"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    button: "Details"
+    
+  - image: "images/02_gallery/simancon_05.jpg"
+    title: "Title"
+    thumb: "images/02_gallery/simancon_05.jpg"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    button: "Details"
+    
+  - image: "images/02_gallery/simancon_06.jpg"
+    title: "Title"
+    thumb: "images/02_gallery/simancon_06.jpg"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    button: "Details"
+    
+  - image: "images/02_gallery/simancon_07.jpg"
+    title: "Title"
+    thumb: "images/02_gallery/simancon_07.jpg"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    button: "Details"
+
+---
