@@ -39,11 +39,40 @@
 
 		
 		<div id="wrapper" class="divided">
-	
-<section class="banner style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
+    <header class="site-header">
+  <nav class="nav">
+    <a href="./" class="nav-logo">Adam Gefen</a>
+
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="./">Main</a></li>
+      <li><a href="./tags/photography">Photography</a></li>
+      <li><a href="./tags/words/">Writing</a></li>
+      <li><a href="./tags/hike/">Hike</a></li>
+      <li><a href="./tags/penart/">Pen art</a></li>
+      <li><a href="./tags/projects/">Projects</a></li>
+    </ul>
+  </nav>
+</header>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const toggle = document.querySelector(".nav-toggle");
+  const links = document.querySelector(".nav-links");
+  toggle.addEventListener("click", () => {
+    links.classList.toggle("open");
+  });
+});
+</script>
+
+    
+<section class="banner top-margin style1 orient-left content-align-left image-position-center  onload-image-fade-in onload-content-fade-right">
     <div class="content">
-        <h2>Adam Gefen</h2>
-        <p class="major"><a href="./words">Writings</a> | <a href="./posts/">Photography</a> | Drawings | Hikes | Projects |
+        
+        <p class="major">contact: <a href="mailto:adamgefen@posteo.net">adamgefen@posteo.net</a>
 </p>
         <p>Thank you for visiting my site. I am Adam, I am playing around with chemical photography and pen art, tinkering with machines and matter in genral, run, climb and hike in the wilderness that I find, mostly in the south of Spain, and trying to form meaningful pieces of text. Here I share like in the good old days the things I am passionate about, the things I wonder about, and the things I am trying to figure out.
 </p>
@@ -56,6 +85,7 @@
     </div>
 </section>
 
+    <div class="spacer"> Recent highlights: </div>
 	
 <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
     <div class="content">
@@ -63,11 +93,11 @@
         <p>A few examples of the light around Vejer, or how it is captured on a baby Graphlex camera from the 1930s...
 </p>
         <ul class="actions stacked">
-            <li><a href="./posts/01_gallery" class="button">more</a></li>
+            <li><a href="./posts/photography_001" class="button">more</a></li>
         </ul>
     </div>
     <div class="image">
-        <img src="images/01_gallery/01.jpg" alt="" />
+        <img src="images/issue_001/01.jpg" alt="" />
     </div>
 </section>
 	
@@ -77,11 +107,39 @@
         <p>Up on the second highest peak in the Sierra de Cádiz
 </p>
         <ul class="actions stacked">
-            <li><a href="./posts/02_gallery" class="button">more</a></li>
+            <li><a href="./posts/photography_002" class="button">more</a></li>
         </ul>
     </div>
     <div class="image">
-        <img src="images/02_gallery/color_cover.jpg" alt="" />
+        <img src="images/issue_002/color_cover.jpg" alt="" />
+    </div>
+</section>
+	
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+    <div class="content">
+        <h2>Relativity and Anarchy</h2>
+        <p>Thoughts about political inclinations, relativity, maturity, nature and anarchy.
+</p>
+        <ul class="actions stacked">
+            <li><a href="./posts/words_001" class="button">read more</a></li>
+        </ul>
+    </div>
+    <div class="image">
+        <img src="images/issue_003/04.jpg" alt="" />
+    </div>
+</section>
+	
+<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+    <div class="content">
+        <h2>Mountain drawings</h2>
+        <p>Pen from images.Ink and rock.
+</p>
+        <ul class="actions stacked">
+            <li><a href="./posts/penart_001" class="button">more</a></li>
+        </ul>
+    </div>
+    <div class="image">
+        <img src="images/issue_004/06.jpg" alt="" />
     </div>
 </section>
 	
@@ -211,6 +269,8 @@
 
 <script type="text/javascript" src="./js/fontawesome-all.min.js"></script>
 
+     <link rel="stylesheet" href="./css/posts.css">
+     <link rel="stylesheet" href="./css/header.css">
 
 
 		

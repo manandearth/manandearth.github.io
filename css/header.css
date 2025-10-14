@@ -1,11 +1,16 @@
+.top-margin {
+margin-top: 8rem;
+}
 .site-header {
   width: 100%;
   padding: 1.5rem 2rem;
   border-bottom: 1px solid rgba(0,0,0,0.1);
   display: flex;
   justify-content: center;
+  position: fixed;
+  background: white;
+  z-index: 10;
 }
-
 .nav {
   display: flex;
   align-items: center;
@@ -38,4 +43,60 @@
 
 .nav-links a:hover {
   color: #000;
+}
+
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .nav {
+    position: relative;
+  }
+
+  /* Show hamburger icon */
+  .nav-toggle {
+    display: block;
+    color: #111;
+  }
+
+  /* Stack links vertically */
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    color: #333;
+  }
+}
+
+.spacer {
+  margin-left: 2rem;
+  font-size: 2rem;
 }
