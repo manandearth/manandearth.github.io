@@ -2,34 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2025-10-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/penart_001/</loc>
+    <loc>//localhost:1313/posts/</loc>
     <lastmod>2025-10-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/penart/</loc>
-    <lastmod>2025-10-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2025-10-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2025-10-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/words_001/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <lastmod>2025-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/words/</loc>
+    <loc>//localhost:1313/posts/words_001/</loc>
     <lastmod>2025-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/photography/</loc>
-    <lastmod>2025-10-06T09:50:42+02:00</lastmod>
-  </url><url>
-    <loc>/posts/photography_002/</loc>
-    <lastmod>2025-10-06T09:50:42+02:00</lastmod>
-  </url><url>
-    <loc>/posts/photography_001/</loc>
-    <lastmod>2025-10-05T00:00:00+00:00</lastmod>
+    <loc>//localhost:1313/tags/words/</loc>
+    <lastmod>2025-10-09T00:00:00+00:00</lastmod>
   </url>
 </urlset>
