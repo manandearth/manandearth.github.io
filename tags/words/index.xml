@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Words on Hugo Story</title>
-    <link>//localhost:1313/tags/words/</link>
+    <link>/tags/words/</link>
     <description>Recent content in Words on Hugo Story</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>{year}</copyright>
     <lastBuildDate>Thu, 09 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/words/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/words/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Things you see from here, you don&#39;t see from there</title>
-      <link>//localhost:1313/posts/words_001/</link>
+      <link>/posts/words_001/</link>
       <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/words_001/</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;dropcap&#34;&gt;I&lt;/span&gt;s this the point where a socialist turned into an anarchist? Did this just happen? I never gave it thought really, I guess I thought Anarchy is just utopian, like all its critics do, as well as thinking it is probably not going to work, which is besides the point, as no other system prove to work, certainly not the current one.&#xA;I&#39;ll start at that moment, or a couple of moments before, I was running up a hill, a hill that I run almost daily. It is not an easy climb, but I am used to it, and my mind alway wanders and then.. I am at the top before I know it.&#xA;I was thinking about something, not sure what, and the voice in my head was judging and calling one idea a &#39;mature&#39; idea, and how for that reason this should be the accepted idea, being close to &#39;objective&#39; and &#39;correct&#39; and &#39;true&#39;, only at that moment it broke and I realised there is no objective and whatever idea will depend on perspective, on a point of view, and on context. So what we call &#39;mature&#39; represents such point of view, and some interest in specific outcome.&lt;/p&gt;</description>
+      <guid>/posts/words_001/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;dropcap&#34;&gt;I&lt;/span&gt;s this the point where a socialist turned into an anarchist? Did this just happen? I never gave it much thought really, I guess I thought Anarchy is just utopian, like all its critics do, as well as thinking it is probably not going to work, which is besides the point, as no other system has proven to work, certainly not the current one.&#xA;I&#39;ll start at that moment, or a couple of moments before, I was running up a hill, a hill that I run almost daily. It is not an easy climb, but I am used to it, and my mind alway wanders and then.. I am at the top before I know it.&#xA;I was thinking about something, not sure what, and the voice in my head was judging and calling one idea a &#39;mature&#39; idea, and how for that reason this should be the accepted idea, being close to &#39;objective&#39; and &#39;correct&#39; and &#39;true&#39;, only at that moment it broke and I realised there is no objective and whatever idea will depend on perspective, on a point of view, and on context. So what we call &#39;mature&#39; represents such point of view, and some interest in a specific outcome.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
