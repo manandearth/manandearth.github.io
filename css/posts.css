@@ -94,3 +94,10 @@ span.dropcap {
   margin: 0.25rem;
   line-height: 2rem;
 }
+div.post-date-tag {
+  display: flex;
+  p {
+    background: lightgray;
+    margin-left: 15px;
+  }
+}
