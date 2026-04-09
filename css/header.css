@@ -20,9 +20,9 @@ margin-top: 8rem;
 }
 
 .nav-logo {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 1.2rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 200;
+  font-size: 1.4rem;
   color: #111;
   text-decoration: none;
 }

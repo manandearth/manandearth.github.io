@@ -89,7 +89,7 @@ span.issue-span {
   font-size: 18px;
 }
 span.dropcap {
-  font-family: serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 2.5rem;
   margin: 0.25rem;
   line-height: 2rem;
