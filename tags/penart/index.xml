@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Penart on Adam Gefen</title>
-    <link>/tags/penart/</link>
+    <link>//localhost:1313/tags/penart/</link>
     <description>Recent content in Penart on Adam Gefen</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>{year}</copyright>
     <lastBuildDate>Thu, 09 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/penart/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/penart/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ink characters</title>
-      <link>/posts/penart_002/</link>
+      <link>//localhost:1313/posts/penart_002/</link>
       <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>/posts/penart_002/</guid>
+      <guid>//localhost:1313/posts/penart_002/</guid>
       <description>&lt;p&gt;&lt;span class=&#34;dropcap&#34;&gt;I&lt;/span&gt; really don&#39;t know where those characters appeared from. When they first crossed my pen, each and every one, I found them embarrassing. They seen to suggest what I did not want to suggest, what I never meant to say. And it is not that by that they uncovered some truth I was trying to conceal, they surprised me with their naive inadequacy.&#xA;Going through them again after more than a year, they also seem incomplete, the artist impatient, the technique half arsed.&#xA;Well, enough with that, they are what they are.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mountain Ink</title>
-      <link>/posts/penart_001/</link>
+      <link>//localhost:1313/posts/penart_001/</link>
       <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/penart_001/</guid>
+      <guid>//localhost:1313/posts/penart_001/</guid>
       <description>&lt;p&gt;&lt;span class=&#34;dropcap&#34;&gt;I&lt;/span&gt; used to draw from references, but this year I&#39;ve started drawing from imagination. I realised that there is so much recorded in my head, that I don&#39;t need to look at in order to imagine completely. There is quite a way to go still, I mostly can&#39;t say that I am happy with the drawings, but the issue isn&#39;t proportions or correctness of details and shading, mostly the issue is that I don&#39;t understand where those images came from, some of them are right down embarrasing, all of them are strange, more about that later, in this letter I will say goodbye to some drawings made with references, either photograps I took, or photographs in books.&lt;/p&gt;</description>
     </item>
   </channel>
