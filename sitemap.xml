@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/posts/photography_002/</loc>
+    <loc>//localhost:1313/posts/photography_003/</loc>
     <lastmod>2026-04-10T09:50:42+02:00</lastmod>
   </url><url>
     <loc>//localhost:1313/</loc>
@@ -41,9 +41,10 @@
     <loc>//localhost:1313/posts/words_001/</loc>
     <lastmod>2025-10-09T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/posts/photography_002/</loc>
+    <lastmod>2025-10-06T09:50:42+02:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/posts/photography_001/</loc>
     <lastmod>2025-10-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/photography_003/</loc>
   </url>
 </urlset>
