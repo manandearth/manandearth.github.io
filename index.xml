@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>{year}</copyright>
-    <lastBuildDate>Fri, 10 Apr 2026 09:50:42 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 09:50:42 +0200</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pinhole</title>
+      <link>//localhost:1313/posts/photography_004/</link>
+      <pubDate>Thu, 16 Apr 2026 09:50:42 +0200</pubDate>
+      <guid>//localhost:1313/posts/photography_004/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;dropcap&#34;&gt;T&lt;/span&gt;he first four images were taken on a Baby Speed Graphics. A 3d printed mount with a hole pierced into foil as a lens, and 9x12 Fomapan cut in a dark bag as the negative. The handmade crude hole jointly with the prevailing winds, and the dusty environment give those prints the hazy dirty look. These are minutes long exposures.&lt;/p&gt;&#xA;&lt;figure class=&#34;center-image&#34;&gt;&#xA;  &lt;img src=&#34;./images/issue_010/03.jpg&#34; alt=&#34;River to the south&#34;&gt;&#xA;  &#xA;    &lt;figcaption&gt;River to the south&lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&#xA;&lt;figure class=&#34;center-image&#34;&gt;&#xA;  &lt;img src=&#34;./images/issue_010/02.jpg&#34; alt=&#34;River to the north&#34;&gt;&#xA;  &#xA;    &lt;figcaption&gt;River to the north&lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;The last photo is a 4x5 negative in a 3d printed box with a more precise hole. Same wind and somewhat less dust.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Abejarruco</title>
       <link>//localhost:1313/posts/photography_003/</link>
