@@ -40,6 +40,10 @@ strong, b {
   font-weight: 600;
 }
 
+a .content p {
+  display: inline-block;
+  width: 100%;   /* keeps it looking like a normal block paragraph */
+}
 em, i {
   font-style: italic;
 }
