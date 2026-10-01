@@ -94,6 +94,7 @@ span.dropcap {
   margin: 0.25rem;
   line-height: 2rem;
 }
+
 div.post-date-tag {
   display: flex;
   p {
@@ -108,4 +109,9 @@ div.post-date-tag {
 .chart-wrapper {
  position: relative;
   height: 1800px;   /* taller chart */
+}
+
+ p.quote {
+    font-style: italic;
+    background: lightgray;
 }

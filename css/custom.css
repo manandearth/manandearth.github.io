@@ -133,3 +133,46 @@ hr.major {
   h3       { font-size: 1.25rem; }
   h4       { font-size: 1rem; }
 }
+
+.subscribe-frame {
+
+    background: #EEEEEE;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+form.signup {
+	display: flex;
+	flex-direction: row;
+	margin: 0 0 2rem 0;
+}
+.subscribe-text {
+font-size: 1.2rem;
+}
+input[type="email"] {
+	flex-grow: 2;
+	height: 4rem;
+	margin: 0 2rem 0 0;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 0.5rem;
+	font-family: var(--sans-serif-font-stack);
+	font-size: 1.25rem;
+	font-style: normal;
+	text-align: center;
+}
+input[type="submit"] {
+	flex-grow: 1;
+	cursor: pointer;
+	height: 4rem;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	-webkit-appearance: none;
+	background-color: lightgray;
+	border: none;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+	line-height: 4rem;
+	text-align: center;
+	color: gray;
+}
