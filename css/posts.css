@@ -115,3 +115,19 @@ div.post-date-tag {
     font-style: italic;
     background: lightgray;
 }
+
+#gallery-post > div.gallery.style2.small.lightbox.onscroll-fade-in > div.inner > article > a > img{
+    height: 10rem;
+}
+
+.click-instruction{
+    text-align: center;
+    font-size:  1rem;
+    color: grey; 
+}
+
+.gallery-post-content a {
+    background: #eee;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}

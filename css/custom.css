@@ -144,10 +144,11 @@ hr.major {
 form.signup {
 	display: flex;
 	flex-direction: row;
-	margin: 0 0 2rem 0;
+	margin: 0 0 1rem 0;
 }
 .subscribe-text {
 font-size: 1.2rem;
+margin-bottom: 1rem;
 }
 input[type="email"] {
 	flex-grow: 2;
@@ -165,8 +166,8 @@ input[type="submit"] {
 	flex-grow: 1;
 	cursor: pointer;
 	height: 4rem;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
 	-webkit-appearance: none;
 	background-color: lightgray;
 	border: none;
@@ -175,4 +176,8 @@ input[type="submit"] {
 	line-height: 4rem;
 	text-align: center;
 	color: gray;
+}
+
+#gallery-post > div.gallery.style2.small.lightbox.onscroll-fade-in > div.inner > article {
+    width: auto;
 }
