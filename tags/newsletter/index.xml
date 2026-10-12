@@ -2,19 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Newsletter on Adam Gefen</title>
-    <link>//localhost:1313/tags/newsletter/</link>
+    <link>/tags/newsletter/</link>
     <description>Recent content in Newsletter on Adam Gefen</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>{year}</copyright>
-    <lastBuildDate>Tue, 20 Oct 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/newsletter/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>manandearth, October 2026</title>
-      <link>//localhost:1313/posts/newsletter_001/</link>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/newsletter_001/</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;dropcap&#34;&gt;T&lt;/span&gt;his newsletter is about figuring things out and making mistakes along the way.&lt;/p&gt;&#xA;&lt;p&gt;The idea to start a blog and a newsletter is haunting me this last year. A year like no other. I was prompted to start writing and to double up my reading due to reckoning with life and its flip side. I am not on social media and at the same time I spend a lot of time online, working, writing code and prose, and reading. I invite you to subscribe to this newsletter. It is a patient medium that rests in your mailbox and is a tribute to that part of the internet and of society where our thoughts are(were) ours and we reach(ed) out to find like-minded free thinking, individuals, rather than trends. I intend to publish monthly. I will try, with humility, to provoke some thinking and inspire creativity.&#xA;The intention is to work around a topic, the content: a story, pen drawings, and black and white photos. There will be references to the external inspiration as well as to related work on &lt;a target=&#34;_blank&#34; href=&#34;http://www.adamgefen.com&#34;&gt;my site&lt;/a&gt;, and if I am favoured by the gods of the internet, the audience will grow and this kind of work will be in demand. Only time will tell. I will also include something you could print with each issue.&lt;/p&gt;</description>
-    </item>
+    <atom:link href="/tags/newsletter/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
