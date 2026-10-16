@@ -84,30 +84,114 @@ document.addEventListener("DOMContentLoaded", function() {
 <div class="gallery-post-content">
 <p><span class="dropcap">T</span>his newsletter is about figuring things out and making mistakes along the way.</p>
 <p>The idea to start a blog and a newsletter is haunting me this last year. A year like no other. I was prompted to start writing and to double up my reading due to reckoning with life and its flip side. I am not on social media and at the same time I spend a lot of time online, working, writing code and prose, and reading. I invite you to subscribe to this newsletter. It is a patient medium that rests in your mailbox and is a tribute to that part of the internet and of society where our thoughts are(were) ours and we reach(ed) out to find like-minded free thinking, individuals, rather than trends. I intend to publish monthly. I will try, with humility, to provoke some thinking and inspire creativity.
-The intention is to work around a topic, the content: a story, pen drawings, and black and white photos. There will be references to the external inspiration as well as to related work on <a target="_blank" href="http://www.adamgefen.com">my site</a>, and if I am favoured by the gods of the internet, the audience will grow and this kind of work will be in demand. Only time will tell. I will also include something you could print with each issue.</p>
+The intention is to work around a topic, the content: a story, pen drawings, and black and white photos. There will be references to the external inspiration as well as to related work on <a target="_blank" href="http://www.adamgefen.com">my site</a> (follow the links to read the related blog posts and view the images), and if I am favoured by the gods of the internet, the audience will grow and this kind of work will be in demand. Only time will tell. I will also include some work that you could print with future issue.</p>
 <div class="subscribe-frame">
-        <div class="subscribe-text">To subscribe to the newsletter, delivered to your mailbox monthly just like in the good old days, please enter your email below:</div>
-        <form
-            action="https://buttondown.com/api/emails/embed-subscribe/manandearth"
-            method="post"
-            class="embeddable-buttondown-form signup"
-        >
-            <input type="email" placeholder="Enter your email"name="email" id="bd-email" />
-            <input type="submit" value="Subscribe" />
-        </form>
+  <div class="subscribe-text">To subscribe to the newsletter, delivered to your mailbox monthly just like in the good old days, please enter your email below:</div>
+  <form
+    action="https://buttondown.com/api/emails/embed-subscribe/manandearth"
+    method="post"
+    class="embeddable-buttondown-form signup subscribe-form"
+    novalidate
+  >
+    <input type="email" name="email" placeholder="Enter your email" aria-label="Email address" autocomplete="email" required />
+    <input type="submit" value="Subscribe" disabled />
+  </form>
 </div>
 
 
-<p>This first issue can be loosly called `Misses` and ironically it started as a reaction to roadkill. This gross illustration of animal as innocent, vulnerable, and sentient, and human as selfish-reaper, while at the same time helpless-operator.
+
+
+<dialog id="subscribe-modal" class="subscribe-modal" aria-labelledby="subscribe-modal-title">
+  <h2 id="subscribe-modal-title"></h2>
+  <p id="subscribe-modal-body"></p>
+  <button type="button" class="subscribe-modal-close">Close</button>
+</dialog>
+
+<style>
+  .subscribe-form input[type="submit"]:disabled { opacity: .5; cursor: not-allowed; }
+  .subscribe-form input[type="email"][aria-invalid="true"] { outline: 2px solid #c0392b; }
+  .subscribe-modal { border: 1px solid #ccc; border-radius: 8px; padding: 1.5rem 2rem; max-width: 26rem; }
+  .subscribe-modal::backdrop { background: rgba(0,0,0,.5); }
+  .subscribe-modal h2 { margin-top: 0; }
+</style>
+
+<script>
+(function () {
+  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  var modal = document.getElementById('subscribe-modal');
+  var title = document.getElementById('subscribe-modal-title');
+  var body  = document.getElementById('subscribe-modal-body');
+
+  function showModal(t, msg) {
+    title.textContent = t;
+    body.textContent = msg;
+    modal.showModal();
+  }
+
+  
+  modal.querySelector('.subscribe-modal-close').addEventListener('click', function () { modal.close(); });
+  modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+
+  function isValid(input) { return EMAIL_RE.test(input.value.trim()); }
+
+  
+  document.addEventListener('input', function (e) {
+    var input = e.target;
+    if (!input.matches('.subscribe-form input[type="email"]')) return;
+    var form = input.form;
+    var valid = isValid(input);
+    form.querySelector('input[type="submit"]').disabled = !valid;
+    input.setAttribute('aria-invalid', (!valid && input.value !== '') ? 'true' : 'false');
+  });
+
+  document.addEventListener('submit', function (e) {
+    var form = e.target;
+    if (!form.matches('.subscribe-form')) return;
+    e.preventDefault();
+
+    var input = form.querySelector('input[type="email"]');
+    var btn = form.querySelector('input[type="submit"]');
+    if (!isValid(input)) return;
+
+    btn.disabled = true;
+    
+    fetch(form.action, { method: 'POST', body: new FormData(form), mode: 'no-cors' })
+      .then(function () {
+        showModal('Almost there!', 'Please check your inbox and confirm your subscription.');
+        form.reset();
+        input.setAttribute('aria-invalid', 'false');
+      })
+      .catch(function () {
+        showModal('Something went wrong', 'Your subscription could not be sent. Please try again later.');
+        btn.disabled = false;
+      });
+  });
+})();
+</script>
+
+
+
+<p><span class="dropcap">T</span>his first issue can be loosly called `Misses` and ironically it started as a reaction to roadkill. This gross illustration of animal as innocent, vulnerable, and sentient, and human as selfish-reaper, while at the same time <a href="https://www.adamgefen.com/posts/words_006/" target="_blank">helpless-operator</a>.
 My son, Noah, find my interest in old cameras funny. The number of measurements and adjustment before a shot can be taken on a seventy year old camera is not lending itself to wildlife photography, he coined the term `tame death` as an antonym to `wild life` and then it all fell in place: Photos of road kill, enough time to measure, adjust, focus, frame and shoot. I was speaking to my friend Stephen Knapp, a biologist, about my new hobby and he recalled the days a couple of decades ago when "you couldn't get anywhere without driving over three snakes...". "damn!", I thought, "the golden days of roadkill are over, my project has come too late".</p>
+<figure class="center-image">
+  <img src="../../images/newsletter_001/03.jpg" alt="Stephen">
+  
+    <figcaption>Stephen</figcaption>
+  
+</figure>
+
 <p>That same afternoon I went out with my camera and came across a dead bird on the road with its wing flapping in the wind, it was on a busy road and was just a perfect illustration. I placed the camera low and took a pleasing shot of the bird in the forground and a speeding car in the background. This being the first photo in the roll, and due to some miscalculation on my part ended up exposed on the marginal part and registered in memory and not in silver bromide. Another friend, Caco, told me he thought about me when he saw a Gennet killed, "What you need to do is to cycle, roadkill is on roads", he said, but I am no road cyclist, I am a hiker and I walk on turmac only if there is no other choice, and so I had to lower a gear on this project and have another one going in parallel: Tipping.</p>
-<p>It is not easy to take a good photo of a pile of rubbish. It is a common practice to tip and the result is a kind of an imprint or a portrait of the individual tipper. On that same roll of film that failed to register the dead bird, the last photo was of a can of redbull and a flattened cigarette butt on a side road that I came across, those were placed perfectly and I thought "wow, this is a portrait really!"", well, luck had it and this photo being the last one in the wrongly wound roll.. it was cropped out.</p>
-<p>Recently, trying to bloat my vinyl collection against the rising prices of records, I bought Robert Wyatt's 'His greatest Misses'. In the case of the old master the paraphrase takes nothing off his greatness, if only I could adapt Wyatt's attitude and see my misses for what they are, a startegy, and not a bug in the system. I have a sense that this is a generational trait, that is not to say that the members of my generation (b. 1974) are forever amateurs, more that those members that also share my flaky interest in absolutely everything, do get to produce a lot of chance work, and to accumulate a fair bit of tat.
+<p><a href="https://www.adamgefen.com/posts/photography_006/" target="_blank_">It is not easy to take a good photo of a pile of rubbish</a>. It is a common practice to tip and the result is a kind of an imprint or a portrait of the individual tipper. On that same roll of film that failed to register the dead bird, the last photo was of a can of redbull and a flattened cigarette butt on a side road that I came across, those were placed perfectly and I thought "wow, this is a portrait really!"", well, luck had it and this photo being the last one in the wrongly wound roll.. it was cropped out.</p>
+<figure class="center-image">
+  <img src="../../images/newsletter_001/06.jpg" alt="burl">
+  
+    <figcaption>Burl</figcaption>
+  
+</figure>
+
+<p>Recently, trying to bloat my vinyl collection against the rising prices of records, I bought Robert Wyatt's 'His greatest Misses'. In the case of the old master the paraphrase takes nothing off his greatness, if only I could adapt Wyatt's attitude and see my misses for what they are, a strategy, and not a bug in the system. I have a sense that this is a generational trait, that is not to say that the members of my generation (b. 1974) are forever amateurs, more that those members that also share <a href="https://www.adamgefen.com/posts/penart_004/" target="_blank">my flaky interest in absolutely everything</a>, do get to produce a lot of chance work, and to accumulate a fair bit of tat.
 <p>Zadie Smith has a lot to say about why it is, but being a novelist, her conclusions are interesting both for self and for society:</p>
 <p class="quote">"They've been right about everything, as every generation is in its own way. Only ever missing one vital piece of data about time and its passing: How it feels." <a href="https://openlibrary.org/books/OL60828975M/Dead_and_Alive" target="_blank_"> Dead and Alive </a> </p>
-<a href="https://www.adamgefen.com/posts/photography_006/" target="_blank">link to the roadkill/tipping photography post</a>
-<a href="https://www.adamgefen.com/posts/penart_004/" target="_blank">link to the fountain transformation pen art post</a>
-<a href="https://www.adamgefen.com/posts/words_006/" target="_blank">link to the cars words post</a>
 
 </div>
 
