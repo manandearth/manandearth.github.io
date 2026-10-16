@@ -3,7 +3,7 @@
 <html>
 	
 	<head>
-	<meta name="generator" content="Hugo 0.150.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.150.0">
 	<title>Adam Gefen</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -22,15 +22,15 @@
 	
 	
 	
-	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/main.min.css">
 	
 	
 	
-	<noscript><link rel="stylesheet" href="./css/noscript.css" /></noscript>
+	<noscript><link rel="stylesheet" href="./css/noscript.min.css" /></noscript>
 	
 
 	
-	<link rel="stylesheet" href="//localhost:1313/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="./css/fontawesome-all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -96,6 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <dialog id="subscribe-modal" class="subscribe-modal" aria-labelledby="subscribe-modal-title">
   <h2 id="subscribe-modal-title"></h2>
   <p id="subscribe-modal-body"></p>
+  <button type="button" id="subscribe-modal-verify" hidden>Verify and subscribe</button>
   <button type="button" class="subscribe-modal-close">Close</button>
 </dialog>
 
@@ -113,16 +114,48 @@ document.addEventListener("DOMContentLoaded", function() {
   var modal = document.getElementById('subscribe-modal');
   var title = document.getElementById('subscribe-modal-title');
   var body  = document.getElementById('subscribe-modal-body');
+  var verifyBtn = document.getElementById('subscribe-modal-verify');
+  var pending = null; 
 
-  function showModal(t, msg) {
+  function showModal(t, msg, needsVerify) {
     title.textContent = t;
     body.textContent = msg;
+    verifyBtn.hidden = !needsVerify;
     modal.showModal();
+  }
+
+  function showAlmostThere(extra) {
+    showModal('Almost there!',
+      (extra || '') + 'Please check your inbox and confirm your subscription.', false);
   }
 
   
   modal.querySelector('.subscribe-modal-close').addEventListener('click', function () { modal.close(); });
   modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+
+  
+  
+  
+  
+  verifyBtn.addEventListener('click', function () {
+    if (!pending) return;
+    var form = pending.form, input = pending.input, btn = pending.btn;
+    pending = null;
+
+    var win = window.open('', 'subscribeVerify', 'width=480,height=640');
+    form.target = win ? 'subscribeVerify' : '_blank';
+    form.submit();                 
+    form.target = '';
+
+    
+    setTimeout(function () {
+      form.reset();
+      input.setAttribute('aria-invalid', 'false');
+      btn.disabled = true;
+    }, 0);
+
+    showAlmostThere('Complete the verification in the window that just opened, then ');
+  });
 
   function isValid(input) { return EMAIL_RE.test(input.value.trim()); }
 
@@ -146,17 +179,23 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!isValid(input)) return;
 
     btn.disabled = true;
+
+    function needsVerification() {
+      pending = { form: form, input: input, btn: btn };
+      showModal('One more step',
+        'To finish subscribing, please complete a quick verification.', true);
+      btn.disabled = false;
+    }
+
     
-    fetch(form.action, { method: 'POST', body: new FormData(form), mode: 'no-cors' })
-      .then(function () {
-        showModal('Almost there!', 'Please check your inbox and confirm your subscription.');
+    fetch(form.action, { method: 'POST', body: new FormData(form) })
+      .then(function (res) {
+        if (!res.ok) return needsVerification();
+        showAlmostThere();
         form.reset();
         input.setAttribute('aria-invalid', 'false');
       })
-      .catch(function () {
-        showModal('Something went wrong', 'Your subscription could not be sent. Please try again later.');
-        btn.disabled = false;
-      });
+      .catch(needsVerification);   
   });
 })();
 </script>
