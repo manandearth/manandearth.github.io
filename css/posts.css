@@ -229,3 +229,9 @@ div.post-date-tag {
 @media (pointer: coarse) {
   .gl-nav { display: none; }
 }
+
+span.writing-format {
+    color: grey;
+    font-size: large;
+    margin-left: 1rem;
+}
