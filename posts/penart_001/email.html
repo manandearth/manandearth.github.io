@@ -243,6 +243,20 @@ span.writing-format {
     font-size: large;
     margin-left: 1rem;
 }
+.car-title { position: relative; }
+
+
+.car-title__car {
+  display: block;
+  width: 200px;          /* native size; go smaller, not larger, to stay sharp */
+  max-width: 60vw;       /* keeps it reasonable on phones */
+  height: auto;
+  will-change: transform;
+  transform: translateX(100vw);
+}
+/* stops the off-screen car from creating a horizontal scrollbar */
+html, body { overflow-x: clip; }
+
 
 .top-margin {
 margin-top: 100px;
