@@ -160,3 +160,17 @@ document.addEventListener('DOMContentLoaded', () => {
     stage.style.transform = '';
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const items = document.querySelectorAll('.gallery article');
+  if (!items.length || !('IntersectionObserver' in window)) return;
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      e.target.classList.toggle('is-centered', e.isIntersecting);
+    });
+  }, { rootMargin: '0px -49% 0px -49%', threshold: 0 });
+
+  items.forEach(el => io.observe(el));
+});
