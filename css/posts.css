@@ -249,9 +249,9 @@ span.writing-format {
 /* stops the off-screen car from creating a horizontal scrollbar */
 html, body { overflow-x: clip; }
 
-// gallery caption to show on mobile where there is no hover
-@media (hover: none) {
-  body .gallery.style2 article.is-centered .caption {
-    opacity: 1;
-  }
+/* gallery caption to show on mobile where there is no hover */
+@media (pointer: coarse){
+.gallery.style2 article.is-centered .caption {
+  opacity: 1 !important;
+}
 }
