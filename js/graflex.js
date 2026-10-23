@@ -19,9 +19,9 @@
       console.log('distance', distance)
       console.log('vw', vw)
       graflex.style.opacity = 0;
-      vw > 1023 ? graflex.style.height = '16rem': graflex.style.height = '25rem';
-      vw > 1023 ? graflex.style.transform = `translate(-72px, -350px) scale(${1 + Math.abs(distance)/1000})` : graflex.style.transform = `translate(2px, -360px) scale(${1 + Math.abs(distance)/1000})` ;
-      vw > 1023 ? graflex.style.opacity = `${0 + distance/500}` : graflex.style.opacity = `${0 + distance/500}`;
+      vw > 1023 ? vw > 1920 ? graflex.style.height = '20rem': graflex.style.height = '16rem': graflex.style.height = '25rem';
+      vw > 1023 ? vw > 1920 ? graflex.style.transform = `translate(-32px, -279px) scale(${1 + Math.abs(distance)/1000})` : graflex.style.transform = `translate(-16px, -288px) scale(${1 + Math.abs(distance)/1000})` : graflex.style.transform = `translate(2px, -360px) scale(${1 + Math.abs(distance)/1000})` ;
+      vw > 1023 ? graflex.style.opacity = `${0 + distance/1200}` : graflex.style.opacity = `${0 + distance/800}`;
       graflex.style['z-index'] = -1
     });
     ticking = false;
